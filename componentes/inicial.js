@@ -5,40 +5,41 @@
  * Componente que renderiza a Tela Inicial
 */
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View,Text,StyleSheet,TouchableHighlight} from 'react-native';
 
-export default function(){
+export default function(){   
+    
     return (
-        <View>
-            <View >
-                <Text style={estilos.shield_nome}>SHIELD</Text>
-            </View>    
-          
-            <View style={{alignItems:'center'}}>
+        <View style={{ alignItems:'center', justifyContent:'center'}}>
+            <Text style={estilos.shield_nome}>Nox</Text>
+            <Text style={{marginTop:'-5%', fontSize:25, marginRight:'-23%', color:'#FFF', fontFamily: "GreatVibes-Regular"}}>Arcana</Text>
+
+            <View>
                 <TouchableHighlight style={estilos.inicial_botao}>
-                    <Text style={{color: '#EEE9E9'}}>
+                    <Text style={{color: '#FFF'}}>
                         ENTRAR
                     </Text>
                 </TouchableHighlight>
             </View>
-        </View>
-    );
+        </View>         
+    );  
+   
 };
 
 
 const estilos=StyleSheet.create({
     shield_nome:{
-        color: '#FF6347',
-        fontSize:60,
-        fontWeight: 'bold',
-        fontFamily: "sans-serif-light"
-            
+        color: '#FFF',
+        fontSize:90,
+        fontFamily: "Seagram tfb"           
     },
     inicial_botao:{
-        backgroundColor: '#000000',
+        marginTop:'3%',
+        backgroundColor: 'gray',
         alignItems:'center',
         padding:8,
-        width:'60%'
+        width:'80%',
+        justifyContent:'center'
     },
 });
