@@ -12,7 +12,7 @@ export default function(){
     
     return (
         <View style={{ alignItems:'center', justifyContent:'center'}}>
-            <Text style={estilos.shield_nome}>Configurações</Text>           
+            <Text>Configurações</Text>           
         </View>         
     );  
    
