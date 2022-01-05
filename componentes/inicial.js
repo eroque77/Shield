@@ -12,8 +12,8 @@ export default function(){
     
     return (
         <View style={{ alignItems:'center', justifyContent:'center'}}>
-            <Text style={estilos.shield_nome}>Nox</Text>
-            <Text style={{marginTop:'-5%', fontSize:25, marginRight:'-23%', color:'#FFF', fontFamily: "GreatVibes-Regular"}}>Arcana</Text>
+            <Text style={estilos.shield_nome}>App</Text>
+            <Text style={{marginTop:'-5%', fontSize:25, marginRight:'-23%', color:'#FFF', fontFamily: "GreatVibes-Regular"}}>Teste</Text>
 
             <View>
                 <TouchableHighlight style={estilos.inicial_botao}>

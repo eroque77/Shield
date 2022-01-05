@@ -6,13 +6,17 @@
 */
 
 import {View,Text,StyleSheet} from 'react-native';
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react'; 
 
 /** Importação dos componentes */
+//Navegação:
 import Inicial from './componentes/inicial';  // Componente que renderiza toda a tela inicial
+import Configuracoes from './componentes/configuracoes';  // Componente que renderiza toda a tela inicial
+//import MainNavigator from './componentes/navegacao';  // Componente que renderiza toda a tela inicial
+
 import {auto_audio_inicial, auto_clique} from './componentes/audios';  // Carrega o audio inicial
 
-/* COMPONENTE FUNCIONAL-----------------------------------------------------------------------------------------------------------*/
+/* COMPONENTE FUNCIONAL--------------------------------------------------------------------------------------------------------------*/
 
 export default function AppMaster(){   
     //Serve para executar algo após a renderização de um componente
@@ -25,7 +29,7 @@ export default function AppMaster(){
             <Text style= {{color:'white'}} onPress={auto_clique} >Click me</Text>
             <Inicial/>                
         </View>
-    );
+    );    
 };
 
 const estilos=StyleSheet.create({

@@ -17,5 +17,5 @@ export const auto_audio_inicial = () => {
 //CLIQUES
 const audio_clique = new Sound('clique.mp3', Sound.MAIN_BUNDLE, (error) => console.log(error));
 export const auto_clique = () => {
-    audio_clique.play((success) => audio_clique.reset());
+    audio_clique.play();
 }
