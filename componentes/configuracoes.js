@@ -11,9 +11,11 @@ import {View,Text,StyleSheet,TouchableHighlight} from 'react-native';
 export default function(){   
     
     return (
-        <View style={{ alignItems:'center', justifyContent:'center'}}>
+        
+        <View style={{ alignItems:'center', justifyContent:'center'}} >
             <Text>Configurações</Text>           
-        </View>         
+        </View>     
+                
     );  
    
 };

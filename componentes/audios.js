@@ -12,6 +12,7 @@ Sound.setCategory('Playback');
 const audio_inicial = new Sound('vento.mp3', Sound.MAIN_BUNDLE, (error) => console.log(error));
 export const auto_audio_inicial = () => {
     audio_inicial.play((success) => audio_inicial.reset());
+    //audio_inicial.play();
 }
 
 //CLIQUES

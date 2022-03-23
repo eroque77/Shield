@@ -5,6 +5,7 @@
  * Componente que renderiza a Tela Inicial
 */
 
+import { NavigationContainer } from '@react-navigation/native';
 import React, {useState, useEffect} from 'react';
 import {View,Text,StyleSheet,TouchableHighlight} from 'react-native';
 
@@ -12,8 +13,8 @@ export default function(){
     
     return (
         <View style={{ alignItems:'center', justifyContent:'center'}}>
-            <Text style={estilos.shield_nome}>App</Text>
-            <Text style={{marginTop:'-5%', fontSize:25, marginRight:'-23%', color:'#FFF', fontFamily: "GreatVibes-Regular"}}>Teste</Text>
+            <Text style={estilos.shield_nome}>Nox</Text>
+            <Text style={{marginTop:'-5%', fontSize:25, marginRight:'-23%', color:'#FFF', fontFamily: "GreatVibes-Regular"}}>Arcana</Text>
 
             <View>
                 <TouchableHighlight style={estilos.inicial_botao}>
@@ -26,7 +27,6 @@ export default function(){
     );  
    
 };
-
 
 const estilos=StyleSheet.create({
     shield_nome:{
