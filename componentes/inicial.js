@@ -5,20 +5,18 @@
  * Componente que renderiza a Tela Inicial
 */
 
-import { NavigationContainer } from '@react-navigation/native';
 import React, {useState, useEffect} from 'react';
 import {View,Text,StyleSheet,TouchableHighlight} from 'react-native';
 
-export default function(){   
-    
+export default function Inicial({navigation}){   
     return (
         <View style={{ alignItems:'center', justifyContent:'center'}}>
-            <Text style={estilos.shield_nome}>Nox</Text>
-            <Text style={{marginTop:'-5%', fontSize:25, marginRight:'-23%', color:'#FFF', fontFamily: "GreatVibes-Regular"}}>Arcana</Text>
+            <Text style={estilos.shield_nome}>Teste</Text>
+            <Text style={{marginTop:'-5%', fontSize:25, marginRight:'-23%', color:'#FFF', fontFamily: "GreatVibes-Regular"}}>Game</Text>
 
             <View>
                 <TouchableHighlight style={estilos.inicial_botao}>
-                    <Text style={{color: '#FFF'}}>
+                    <Text style={{color: '#FFF'}} onPress={()=>navigation.navigate('Configuracoes')} >
                         ENTRAR
                     </Text>
                 </TouchableHighlight>

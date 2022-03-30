@@ -30,17 +30,16 @@ export default function AppMaster(){
     }, [])   
 
     return (            
-        <View style={estilos.view_inicial}>    
-            <Text style= {{color:'white'}} >Click me</Text>
-            <Inicial/>    
-            
-            <NavigationContainer> 
-                {/* <Stack.Navigator>
+        <View style={estilos.view_inicial}> 
+            <NavigationContainer>            
+                <Stack.Navigator>
                     <Stack.Screen name="Inicial" component={Inicial} />
                     <Stack.Screen name="Configuracoes" component={Configuracoes} />    
-                </Stack.Navigator> */}
-            </NavigationContainer> 
-        </View>
+                </Stack.Navigator>               
+            </NavigationContainer>   
+            <Text style= {{color:'white'}} >Click me</Text>
+            <Inicial/>        
+        </View>        
     );    
 };
 

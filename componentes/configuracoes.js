@@ -8,12 +8,13 @@
 import React, {useState, useEffect} from 'react';
 import {View,Text,StyleSheet,TouchableHighlight} from 'react-native';
 
-export default function(){   
+export default function Configuracoes({navigation}){   
     
     return (
         
         <View style={{ alignItems:'center', justifyContent:'center'}} >
-            <Text>Configurações</Text>           
+            <Text>Configurações</Text>   
+            <Text onPress={(props)=>props.navigation.navigate('Inicial')}>Voltar</Text>        
         </View>     
                 
     );  
